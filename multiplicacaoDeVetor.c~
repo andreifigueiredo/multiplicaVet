@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main void()
+{
+	int m, n;
+	int matriz[m][n];
+	int vetor[n];
+	int i, j;
+	int soma[m];
+
+	printf("Quantas linhas a matriz tem?");
+	scanf("%d", &m);
+
+	printf("Quantas colunas a matriz e o vetor tem?");
+	scanf("%d", &n);
+
+	printf("Insira os elementos da matriz:");
+	for(i = 0; i <= m; i++)
+	{
+		for(j = 0; i <= n; i++)
+		{
+			scanf("%d", &matriz[m][n]);
+		}
+	}
+	
+	printf("Insira os elementos do vetor:");
+	for(j = 0; i <= n; i++)
+	{
+		scanf("%d", &vetor[n]);
+	}
+
+	for(i = 0; i <= m; i++)
+	{
+		for(j = 0; i <= n; i++)
+		{
+			soma[m] = soma[m] +(matriz[m][n] * vetor[n]);
+		}
+	}
+
+	for(i = 0; i <= m; i++)
+	{	
+		printf("%d \n ", soma[m]);
+	}
+}
